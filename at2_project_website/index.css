@@ -1,0 +1,103 @@
+/* Descriptive comments deliberate for future reference */
+/* Mobile First View */
+
+h2 {
+    color: #F5E8D0;
+    display: none;
+    text-decoration: underline;
+    text-decoration-color: rgba(245, 232, 208, 0.5); /* Same color as text but with opacity */
+}
+
+aside {
+    background: #324A32; /* Lighter green for better contrast */
+    font-size: 100%;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    color: #F2E6D6; /* Light warm beige for contrast */
+}
+
+aside h3{
+        text-decoration: underline;
+        text-decoration-color: rgba(245, 232, 208, 0.5); /* Same color as text but with opacity */
+}
+    
+/* Change the colour of aside links on focus using tab key */
+aside a:focus, aside a:hover {
+    background-color: #466046; /* Medium green for better focus effect */
+    color: #FFFFFF; /* Pure white for contrast */
+    outline: none;
+}
+
+/* Style the links in the aside section */
+aside a {
+    color: #F5E8D0; /* Warmer beige with high readability */
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%;
+}
+
+article {
+    background-color: #1B2A1B; /* Deep earthy green */
+    color: #F5E8D0; /* Brighter beige for easier reading */
+    font-size: 110%;
+    padding: 10px;
+    line-height: 1.7; /* Increased spacing for clarity */
+}
+
+/* More readable article links */
+article a {
+    color: #FFFAEB; /* Soft off-white for clarity */
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Change the colour of article links on focus using tab key and hover using mouse */
+article a:focus, article a:hover {
+    background-color: #5A7A5A; /* Warmer green highlight */
+    color: #FFFFFF; /* White contrast */
+    outline: none;
+}
+
+#main_image {
+    width: 100%; /* Matches the section width, aligning with the article text area */
+    height: 15rem; /* Scales with zoom based on root font size */
+    margin: 0 auto; /* Centers the image */
+    display: block;
+    object-fit: cover; /* Ensures the image fills the space while maintaining aspect ratio */
+}
+
+article H2 {
+    display: block;
+    margin: 0px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    main {
+        display: flex;
+    }
+
+    aside {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        justify-content: center;
+        width: 17.5%;
+    }
+
+    section {
+        display: inline;
+        float: right;
+        width: 82.5%;
+    }
+    #main_image {
+        width: 100%; /* Matches the section width (of viewport) */
+        height: 20rem; 
+    }
+}
