@@ -1,0 +1,33 @@
+/*Mobile First View*/
+
+footer{
+    background-color: #121A12; /* Deep forest green */
+    color: #F2E6D6;
+    padding: 10px 0 4px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Colour the text of links in the footer */
+footer a {
+    color: #F2E6D6;
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none; /* No "hyperlink showing" */
+}
+
+/* Change the colour of the links in the footer on hover using mouse & focus using tab button */
+/* this is related to the text displacement effect */
+footer a:hover,
+footer a:focus {
+    background-color: #364A36;
+    color: white;
+    outline: none;
+    padding: 10px;
+}
+
+footer img {
+        height: 22px;
+        margin-left: 3px;
+        vertical-align: text-bottom;
+}

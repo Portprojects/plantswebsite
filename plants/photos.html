@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="House Plants">
+    <title>House Plants</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="photos.css">
+    <link rel="icon" type="image/x-icon" href="images/monstera_icon.png" />
+    <!--   Reference: https://pixabay.com/illustrations/monstera-plant-natural-leaf-green-7230432/-->
+</head>
+
+<body>
+     <header>
+          <h1>House Plants</h1>
+          <label for="hamburger_checkbox">
+               <img src="images/hamburger_icon.svg" alt="Navigation Menu" id="hamburger_image">
+          </label>
+          <input type="checkbox" id="hamburger_checkbox">
+          <nav>
+               <a href="index.html">Index</a>
+               <a href="photos.html" class="active_nav">Photos</a>
+               <a href="about.html">About</a>
+               <a href="contact.html">Contact</a>
+          </nav>
+     </header>
+
+     <!-- Note: divs are generic containers and do not convey any meaning about its content -->
+     <!-- Photo grid-->
+     <main>
+          <div class="column">
+          <img src="images/960w/photo_grid/arrow1.jpg" title="Arrow plant image 1"
+               alt="A potted Syngonium plant with heart-shaped green leaves and light veins in a white textured pot on a dark surface." >
+          <img src="images/960w/photo_grid/arrow2.jpg" title="Arrow plant image 2"
+               alt="A striking arrow-shaped plant takes center stage in this picture, its lush green leaves and sharp point standing out against a softly blurred backdrop">
+          <img src="images/960w/photo_grid/arrow3.jpg" title="Arrow plant image 3"
+               alt="An oil painting-style image of a potted Syngonium plant with heart-shaped green leaves in a white textured pot on a dark surface">
+          <img src="images/960w/photo_grid/arrow4.jpg" title="Arrow plant image 4"
+               alt="A potted Syngonium plant with softened colors, featuring heart-shaped green leaves in a white textured pot on a dark surface, with a blurred background.">
+          </div>
+
+          <div class="column">
+          <img src="images/960w/photo_grid/happy_pot1.jpg" title="Happy pot image 1"
+               alt="A plant with green and white leaves in a smiling white pot on a wooden surface, with other plants in the background.">
+          <img src="images/960w/photo_grid/happy_pot2.jpg" title="Happy pot image 2"
+               alt="A plant with green and white leaves in a smiling white pot on a wooden surface, with a rain effect overlay and other plants in the background.">
+          <img src="images/960w/photo_grid/happy_pot3.jpg" title="Happy pot image 3"
+               alt="An oil painting-style image of a plant with green and white leaves in a smiling white pot on a wooden surface, with other plants in the background.">
+          <img src="images/960w/photo_grid/happy_pot4.jpg" title="Happy pot image 4"
+               alt="A plant with green and white leaves in a sharply focused smiling white pot on a wooden surface, with a blur effect around it softening the background and other plants.">
+          </div>
+
+          <div class="column">
+          <img src="images/960w/photo_grid/monstera1.jpg" title="Monstera image 1"
+               alt="A Monstera plant with large, glossy green leaves featuring natural splits and holes, supported by a moss pole in a corner with light walls and wooden floor.">
+          <img src="images/960w/photo_grid/monstera2.jpg" title="Monstera image 2"
+               alt="A black-and-white Monstera plant with broad, split leaves in a crosshatch style with diagonal lines.">
+          <img src="images/960w/photo_grid/monstera3.jpg" title="Monstera image 3"
+               alt="An oil painting-style Monstera plant with broad, split green leaves in soft, blended hues, set against a light corner background with a wooden floor.">
+          <img src="images/960w/photo_grid/monstera4.jpg" title="Monstera image 4"
+               alt="A Monstera plant with glossy green split leaves, focused in the center with blurred edges, in a light corner with a wooden floor.">
+          </div>
+
+          <div class="column">
+          <img src="images/960w/photo_grid/multi1.jpg" title="Multiple plants image 1"
+               alt="A snake plant, small monkey Monstera, variegated ficus, and trailing purple plant in various pots on a dark surface with a mosaic mat.">
+          <img src="images/960w/photo_grid/multi2.jpg" title="Multiple plants image 2"
+               alt="A snake plant, small monkey Monstera, variegated ficus, and trailing purple plant in pots on a dark surface with a mosaic mat, with a subtle overlay of tiny random colored dots.">
+          <img src="images/960w/photo_grid/multi3.jpg" title="Multiple plants image 3"
+               alt="An oil painting-style image of a snake plant, small monkey Monstera, variegated ficus, and trailing purple plant in pots on a dark surface with a mosaic mat, featuring soft color distortion.">
+          <img src="images/960w/photo_grid/multi4.jpg" title="Multiple plants image 4"
+               alt="A snake plant, small monkey Monstera, variegated ficus, and trailing purple plant in pots, with a vibrant overlay of tiny random colored dots and a gentle color shift effect.">
+          </div>
+          <!-- A mixture of LLM's used for photo descriptions. refining crude description prompts -->
+          <!-- Settled on having to indent all that ^, to be consistent with rest of site-->
+     </main>
+
+     <div id ="row"></div> <!-- not sure why this is here-->
+     
+     <footer>
+        <p>
+            House Plants &copy; by Scott Evans is licenced under
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank"
+               rel="license noopener noreferrer" >CC BY-NC-ND 4.0
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+            </a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

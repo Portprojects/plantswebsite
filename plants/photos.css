@@ -1,0 +1,46 @@
+/*Mobile first view - 1 by 16 grid*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 12px;
+    vertical-align: middle;
+}
+
+.column {
+    margin-top: 0;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.column img { /* image element within column*/
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+/* generic media queries first - implement the bare minimum at 
+the top andas we go along implement changes for larger screens */
+
+/* Medium devices (landscape tablets, 768px and up) 2*8 Grid */
+@media only screen and (min-width: 768px) {
+    .column {
+        max-width: 50%;
+        padding: 0 6px;
+    }
+
+    main {
+        padding: 0 6px;
+    }
+}
+
+/* Large devices (landscape tablets, 1200px and up) 4*4 Grid */
+@media only screen and (min-width: 1200px) {
+    .column {
+        max-width: 25%;
+        padding: 0 6px;
+    }
+    
+    main {
+        padding: 0 6px;
+    }
+}
