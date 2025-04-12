@@ -1,0 +1,58 @@
+main > div {
+    background-color: #1B2A1B;
+    color: #F2E6D6;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 20px;
+    text-align: left;
+}
+
+main > div > h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+main > div > p {
+    font-size: 18px;
+}
+
+/*colour the text of links black*/
+/*may be redundant in current code - we would also want the current text colour*/
+main > div > a {
+    color: black;
+    font-size: 10px;
+}
+
+main {
+    background-color: #324A32;
+    display: grid;
+    grid-template-areas:
+    "."
+    "."
+    "."
+    "."
+    "."
+    ".";
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/*large devices (laptops/desktops 992px and up)*/
+@media only screen and (min-width:500px) {
+
+    #container2 {
+        grid-area: area2;
+    }
+
+    #container3 {
+        grid-area: area3;
+    }
+    
+    main {
+        grid-template-areas:
+        ".          area3 ."
+        "area2      area3 ."
+        "area2      area3 .";
+    }
+}
