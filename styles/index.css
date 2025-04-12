@@ -1,0 +1,97 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0b1a2f;
+  color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  color: #e0e6f5;
+}
+
+header p {
+  font-size: 1rem;
+  color: #c9d6f3;
+  margin-bottom: 1.25rem;
+}
+
+.intro-paragraph {
+  font-size: 0.95rem;
+  color: #b3c5e6;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  margin: 3rem 0 2rem 0;
+  color: #dce6fa;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.project-card {
+  background: #13294b;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #f1f5f9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.project-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #dce6fa;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #b3c5e6;
+}
+
+@media (min-width: 600px) {
+  .project-grid {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .project-grid {
+    gap: 1.5rem;
+  }
+}
